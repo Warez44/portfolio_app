@@ -1,0 +1,119 @@
+
+// --------- Defining Colors
+
+
+$dark: #424652;
+$light: #9a9da4;
+$highlight: #8bc6db;
+$border: #E9E9E9;
+
+// --------- CLEARFIX
+
+.clearfix::before
+.clearfix::after{
+  content: ' ';
+  display: table;
+}
+.clearfix::after{
+  clear: both;
+}
+
+// --------- Typography
+
+.button{
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: transparent;
+  border: 2px solid darken($border, 20%);
+  &:hover{
+    color: $highlight;
+    border-color: $highlight;
+  }
+}
+h1{
+  color: $dark;
+  text-transform: uppercase;
+}
+hr{
+  width: 45px;
+  color: $highlight;
+}
+
+.date{
+  color: $light;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 400;
+}
+h2{
+  font-weight: 200;
+  color: $light;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+p{
+  color: $dark;
+  font-size: 18px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+body{
+  font-family: 'Oswald', sans-serif;
+}
+
+#main_navigation{
+    padding: 2.5em 5% 4rem 5%;
+    .name{
+      letter-spacing: 5px;
+      font-weight: 700;
+      font-size: .9em;
+      text-transform: uppercase;
+      border: 2px solid $border;
+      padding: 0.75em 1rem;
+      text-decoration: none;
+      color: $dark;
+      float: left;
+    }
+    nav{
+      float: right;
+      padding-top: 1em;
+      a{
+        color: $dark;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1rem;
+        margin: 0.4em 1em;
+        &:hover{
+          color: $highlight
+        }
+      }
+    }
+  border-bottom: 2px solid $border;
+}
+
+footer{
+  position: relative;
+  bottom: -70px;
+  clear: both;
+  border-top: 2px solid $border;
+    p{
+      position: relative;
+      bottom: -60px;
+      font-weight: 200;
+      color: $light;
+    }
+    a{
+      color: $dark;
+      &:hover{
+        color: $highlight;
+      }
+    }
+    i{
+      float: right;
+      padding: 0 1.5em;
+    }
+}
+
+// --------- Import specific pages
+
+@import "homepage";
+@import "posts";
+@import "post_show";
+@import "contact"
+æ
