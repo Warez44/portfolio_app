@@ -16,7 +16,7 @@
 .wall2 {
   height: 250px;
   width: 100%;
-  background: url("../images/wall.png") repeat;
+  background: url("./wall.png") repeat;
   background-attachment: fixed;
 }
 
@@ -31,5 +31,9 @@
   }
   p::first-letter{
       color: $highlight;
+  }
+  .button{
+    position: relative;
+    left: -9%;
   }
 }

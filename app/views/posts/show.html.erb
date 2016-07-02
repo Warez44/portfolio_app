@@ -20,3 +20,5 @@
 <%= link_to "Edit", edit_post_path(@post)%> <!-- found with rake routes ! -->
 
 <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: 'Are you sure you want to delete?'} %>
+
+<%= render 'disqus' %>
