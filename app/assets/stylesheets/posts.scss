@@ -2,7 +2,7 @@
 .wall1 {
   height: 325px;
   width: 100%;
-  background: url("./wall.png") repeat;
+  background: image-url("wall.png") repeat;
   background-attachment: fixed;
   h1{
       font-size: 4em;
@@ -16,7 +16,7 @@
 .wall2 {
   height: 250px;
   width: 100%;
-  background: url("./wall.png") repeat;
+  background: image-url("wall.png") repeat;
   background-attachment: fixed;
 }
 
