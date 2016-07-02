@@ -1,7 +1,18 @@
 
 
-<h1><%= @post.title %></h1><br>
-<p><%= @post.content %></p>
+<div class="post_content">
+        <header class="wall1" data-stellar-background-ratio="0.5">
+          <h1><%= @post.title %></h1>
+        </header>
+        <div class="text">
+          <p><%= @post.content %></p>
+        </div>
+    </div>
+    <hr/>
+    <div class="share_box">
+      <p>Share <%= @post.title %> </p>
+      <nav><%= render_shareable %></nav>
+    </div>
 
 <br>
 <br>

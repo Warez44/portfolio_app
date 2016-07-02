@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="../../assets/stylesheets/font-awesome/css/font-awesome.min.css">
+
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald" rel="stylesheet">
@@ -18,7 +21,7 @@
 </head>
 <body>
   <header id="main_navigation" class="clearfix">
-      <a href="#" class="name">Corentin Lingier</a>
+      <%= link_to "Corentin Lingier", root_path, class: 'name' %>
       <nav>
         <%= link_to "Posts", posts_path %>
         <a href="#">Projects</a>
@@ -32,9 +35,9 @@
 
 <footer class="clearfix">
     <p> &copy; 2016 Corentin Lingier </p>
-    <a href ="#"><i class="fa fa-facebook"></i></a>
-    <a href ="#"><i class="fa fa-google-plus"></i></a>
-    <a href ="#"><i class="fa fa-twitter"></i></a>
+    <a href ="https://www.facebook.com/colingier" target= "_blank"><i class="fa fa-facebook"></i></a>
+    <a href ="https://plus.google.com/101360957834459275295/" target= "_blank"><i class="fa fa-google-plus"></i></a>
+    <a href ="http://github.com/Warez44" target= "_blank"><i class="fa fa-github"></i></a>
 </footer>
 </body>
 </html>

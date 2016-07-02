@@ -1,0 +1,25 @@
+<div class="banner">
+      <%= image_tag('banner.jpg', id: 'banner') %>
+      <h1> Portfolio </h1>
+    </div>
+    <div class="content clearfix">
+      <div class="about">
+        <h1>About</h1>
+        <hr> <br>
+        <h2>Hey, welcome to my portfolio.<h2>
+        <p> I'm a belgian student who loves coding, I study in Waterloo. This page is a kind of blog where I show my projects, and post some stuffs.
+         It's a ruby on rails based site. I created a database where I stocked my posts and projects.
+         I've done this site to train me.
+         It's my first page so don't be hard on myself. </p>
+      </div>
+      <div class="posts">
+        <h1>Latest Posts:</h1>
+          <hr>
+          <br>
+          <br>
+          <% @posts.each do |post| %>
+            <%= link_to post.title, post %> <br>
+            <p class= 'date'> <%= post.created_at.strftime("%A, %b %d") %></p> <br>
+          <% end %>
+      </div>
+    </div>

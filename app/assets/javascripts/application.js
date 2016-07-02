@@ -13,4 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery.nicescroll
+//= require jquery.stellar
+//= require script
 //= require_tree .

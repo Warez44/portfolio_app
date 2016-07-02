@@ -1,0 +1,35 @@
+
+.wall1 {
+  height: 325px;
+  width: 100%;
+  background: url("./wall.png") repeat;
+  background-attachment: fixed;
+  h1{
+      font-size: 4em;
+      margin-top: 0;
+      text-align: center;
+      position: relative;
+      top: 35%;
+  }
+}
+
+.wall2 {
+  height: 250px;
+  width: 100%;
+  background: url("../images/wall.png") repeat;
+  background-attachment: fixed;
+}
+
+.post{
+  margin-top: 40px;
+  height: 400px;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  h1::first-letter{
+      color: $highlight;
+  }
+  p::first-letter{
+      color: $highlight;
+  }
+}
