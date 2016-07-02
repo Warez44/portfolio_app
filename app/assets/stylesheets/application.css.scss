@@ -22,10 +22,20 @@ $border: #E9E9E9;
 
 // --------- Typography
 
+.skinny_wrapper{
+
+  width: 85%;
+  margin: 1em auto;
+  clear: both;
+
+}
+
 .button{
+  padding: 10px 20px;
   font-family: 'Open Sans Condensed', sans-serif;
   background-color: transparent;
   border: 2px solid darken($border, 20%);
+  cursor: pointer;
   &:hover{
     color: $highlight;
     border-color: $highlight;
@@ -54,6 +64,10 @@ p{
   color: $dark;
   font-size: 18px;
   font-family: 'Open Sans Condensed', sans-serif;
+}
+a{
+  color: $dark !important;
+
 }
 body{
   font-family: 'Oswald', sans-serif;
@@ -111,11 +125,33 @@ footer{
       padding: 0 1.5em;
     }
 }
+form{
+
+  width: 85%;
+  margin: 0 auto;
+  clear: both;
+  label{
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+
+  input[type= 'text'], textarea{
+      width: 85%;
+      font-family: 'Open Sans Condensed', sans-serif;
+
+  }
+  textarea{
+    min-height: 500px;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+  }
+
+}
+
 
 // --------- Import specific pages
 
 @import "homepage";
 @import "posts";
 @import "post_show";
-@import "contact"
-æ
+@import "contact";
+@import "pygments";

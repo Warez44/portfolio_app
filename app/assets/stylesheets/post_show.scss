@@ -1,4 +1,7 @@
 .text{
+  #main_title{
+    color: $dark;
+  }
   padding: 2em 30px;
   p{
     font-size: 23px;
@@ -20,8 +23,14 @@ hr{
       text-transform: uppercase;
     }
   nav.share {display:inline-block;} /* shareable's nav tag */
-  nav.share div {float:left;}
-  nav.share iframe {border:0; margin-top:0; padding-top:0;} /* if using medium sized buttons */
+  nav.share div {
+    float:left;
+    span{
+      padding-right: 10px;
+    }
+  }
+
+
   #___plusone_0 {font-size: default !important;}
   .fb_iframe_widget span { vertical-align: top; }
   .fb_edge_widget_with_comment { vertical-align: top;}

@@ -2,10 +2,10 @@
 
 <div class="post_content">
         <header class="wall1" data-stellar-background-ratio="0.5">
-          <h1><%= @post.title %></h1>
+          <h1 id="main_title"><%= @post.title %></h1>
         </header>
         <div class="text">
-          <p><%= @post.content %></p>
+          <p><%= markdown @post.content %></p>
         </div>
     </div>
     <hr/>
