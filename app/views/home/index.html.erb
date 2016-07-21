@@ -17,7 +17,7 @@
           <hr>
           <br>
           <br>
-          <% @posts.each do |post| %>
+          <% @posts.last(3).each do |post| %>
             <%= link_to post.title, post %> <br>
             <p class= 'date'> <%= post.created_at.strftime("%A, %b %d") %></p> <br>
           <% end %>
